@@ -188,6 +188,11 @@ const ruResources = {
     registering: "Регистрация...",
     loginWithGosuslugi: "Войти через Госуслуги",
     loginWithINN: "Войти по ИНН и паспорту",
+    standardLogin: "Стандартный вход",
+    innLogin: "Вход по ИНН",
+    passportSeries: "Серия паспорта",
+    passportNumber: "Номер паспорта",
+    or: "или",
 
     // Navigation
     dashboard: "Главная",
@@ -269,6 +274,17 @@ const ruResources = {
       yoomoney: "ЮKassa (YooMoney)",
       qiwi: "QIWI"
     },
+    instantPayment: "Мгновенный платеж",
+    digitalWalletRu: "Электронный кошелек",
+    electronicPayment: "Электронная оплата",
+    securePayments: "Безопасные платежи",
+    securePaymentsDescription: "Все платежи защищены по стандартам ФСБ России и соответствуют требованиям ФЗ-152 о защите персональных данных.",
+    creditCard: "Банковская карта",
+    bankTransfer: "Банковский перевод",
+    digitalWallet: "Электронный кошелек",
+    paymentVoucher: "Платежная квитанция",
+    inPersonPayment: "Оплата в отделении",
+    acceptedPaymentMethods: "Принимаемые способы оплаты",
     
     // Misc
     uploadSupportingDocuments: "Загрузить подтверждающие документы",

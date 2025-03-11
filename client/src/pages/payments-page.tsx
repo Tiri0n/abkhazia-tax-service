@@ -234,60 +234,67 @@ export default function PaymentsPage() {
       <div className="mt-8">
         <h2 className="text-xl font-semibold mb-4">{t("acceptedPaymentMethods")}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {/* Sberbank Online */}
           <Card className="p-4 flex items-center">
-            <div className="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center mr-3">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect width="20" height="14" x="2" y="5" rx="2" />
-                <line x1="2" x2="22" y1="10" y2="10" />
+            <div className="w-10 h-10 bg-[#eaf3ec] rounded-full flex items-center justify-center mr-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12Z" fill="white"/>
+                <path d="M22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12Z" stroke="#1a9f29" strokeWidth="1"/>
+                <path d="M8.4 18V6H15.6C16.8 6 17.4 6.6 17.4 7.8C17.4 9 16.8 9.6 15.6 9.6H12.6V13.2H14.4C15.6 13.2 16.2 13.8 16.2 15C16.2 16.2 15.6 16.8 14.4 16.8H12.6V18H8.4Z" fill="#1a9f29"/>
               </svg>
             </div>
             <div>
-              <h3 className="font-medium">{t("creditCard")}</h3>
-              <p className="text-sm text-neutral-500">Visa, Mastercard, Amex</p>
+              <h3 className="font-medium">{t("paymentMethods.sberbank")}</h3>
+              <p className="text-sm text-neutral-500">{t("instantPayment")}</p>
             </div>
           </Card>
           
+          {/* Tinkoff */}
           <Card className="p-4 flex items-center">
-            <div className="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center mr-3">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+            <div className="w-10 h-10 bg-[#f9f3e8] rounded-full flex items-center justify-center mr-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12Z" fill="white"/>
+                <path d="M22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12Z" stroke="#FFE603" strokeWidth="1"/>
+                <path d="M12 6C15.866 6 19 9.13401 19 13C19 16.866 15.866 20 12 20C8.13401 20 5 16.866 5 13C5 9.13401 8.13401 6 12 6Z" fill="#FFDD2D"/>
+                <path d="M12.5 10.5V15.5H11.5V10.5H12.5Z" fill="black"/>
+                <path d="M12.5 8.5V9.5H11.5V8.5H12.5Z" fill="black"/>
               </svg>
             </div>
             <div>
-              <h3 className="font-medium">{t("bankTransfer")}</h3>
-              <p className="text-sm text-neutral-500">ACH, Wire Transfer</p>
+              <h3 className="font-medium">{t("paymentMethods.tinkoff")}</h3>
+              <p className="text-sm text-neutral-500">Visa, MasterCard, МИР</p>
             </div>
           </Card>
           
+          {/* YooMoney */}
           <Card className="p-4 flex items-center">
-            <div className="w-10 h-10 bg-purple-50 rounded-full flex items-center justify-center mr-3">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" />
-                <path d="M3 5v14a2 2 0 0 0 2 2h16v-5" />
-                <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
+            <div className="w-10 h-10 bg-[#e8f1f9] rounded-full flex items-center justify-center mr-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12Z" fill="white"/>
+                <path d="M22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12Z" stroke="#0055FF" strokeWidth="1"/>
+                <path d="M7 7H11V17H7V7Z" fill="#0055FF"/>
+                <path d="M13 12C13 9.79086 14.7909 8 17 8V16C14.7909 16 13 14.2091 13 12Z" fill="#0055FF"/>
               </svg>
             </div>
             <div>
-              <h3 className="font-medium">{t("digitalWallet")}</h3>
-              <p className="text-sm text-neutral-500">PayPal, Apple Pay</p>
+              <h3 className="font-medium">{t("paymentMethods.yoomoney")}</h3>
+              <p className="text-sm text-neutral-500">{t("digitalWalletRu")}</p>
             </div>
           </Card>
           
+          {/* QIWI */}
           <Card className="p-4 flex items-center">
-            <div className="w-10 h-10 bg-amber-50 rounded-full flex items-center justify-center mr-3">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 8V7a3 3 0 0 1 3-3h0a3 3 0 0 1 3 3v1a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7a3 3 0 0 1 3-3h0a3 3 0 0 1 3 3v1" />
-                <path d="M22 7.8c-.2-2-1.8-2.8-3-2.8h-1a2.4 2.4 0 0 0-2.4 2.8V8h4.8" />
-                <path d="M6.8 8h4.4V7a2.4 2.4 0 0 0-2.4-2.8H7.8" />
-                <path d="M8 6v.8A.8.8 0 0 1 7.2 8" />
-                <rect width="16" height="12" x="4" y="8" rx="2" />
-                <path d="m8 12 2 2 6-3" />
+            <div className="w-10 h-10 bg-[#f7e8f9] rounded-full flex items-center justify-center mr-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12Z" fill="white"/>
+                <path d="M22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12Z" stroke="#FF8C00" strokeWidth="1"/>
+                <path d="M7.5 6.5H16.5C17.0523 6.5 17.5 6.94772 17.5 7.5V16.5C17.5 17.0523 17.0523 17.5 16.5 17.5H7.5C6.94772 17.5 6.5 17.0523 6.5 16.5V7.5C6.5 6.94772 6.94772 6.5 7.5 6.5Z" fill="#FF8C00"/>
+                <path d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" fill="white"/>
               </svg>
             </div>
             <div>
-              <h3 className="font-medium">{t("paymentVoucher")}</h3>
-              <p className="text-sm text-neutral-500">{t("inPersonPayment")}</p>
+              <h3 className="font-medium">{t("paymentMethods.qiwi")}</h3>
+              <p className="text-sm text-neutral-500">{t("electronicPayment")}</p>
             </div>
           </Card>
         </div>
