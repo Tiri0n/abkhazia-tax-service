@@ -1,0 +1,52 @@
+Thank you! Here are the details for adapting the tax service application for Abkhazia:
+
+⸻
+
+1. Currency
+	•	The primary currency should remain Russian Rubles (₽), as it is the official and most widely used currency in Abkhazia, including for tax payments.
+	•	There is the Abkhazian Apsar, but it is rarely used in practice for financial transactions or tax purposes. You can skip Apsar support for now unless needed in future versions.
+
+⸻
+
+2. Payment Methods
+
+Please include the following payment options:
+	•	Bank transfers via Russian banks operating in Abkhazia:
+	•	Sberbank
+	•	VTB Bank
+	•	Promsvyazbank
+	•	Local payment system:
+	•	APRA (Абхазский процессинговый центр), which processes local card payments and POS transactions.
+	•	Cash payments:
+	•	Include an option to manually confirm offline cash payments, which are common in rural areas with limited access to electronic payment systems.
+
+⸻
+
+3. Tax Document Types
+	•	Standard documents similar to Russian formats:
+	•	Tax notifications (налоговое уведомление)
+	•	Payment orders (платёжное поручение)
+	•	Payment receipts (платёжный чек)
+	•	Additional tax types specific to Abkhazia:
+	•	Patent-based taxation (патентная система налогообложения) for individual entrepreneurs.
+	•	Rental payments (арендные сборы) for land and property usage.
+	•	Land tax and property tax, often calculated at the local level.
+	•	If possible, add functionality to create custom tax categories since local regulations may vary by district.
+
+⸻
+
+4. Language Support
+	•	Russian language should be the default for the entire interface and user communication since it is the primary language used in government services in Abkhazia.
+	•	Optional: Add Abkhazian language support if a reliable translation source is available. For now, Russian-only support is sufficient.
+
+⸻
+
+5. Other Regional Requirements
+	•	Ensure offline functionality or manual confirmation of transactions in areas with unstable or limited internet connectivity.
+	•	Optimize the application for low-bandwidth conditions, as some users may have slower internet speeds.
+	•	Provide clear user instructions and legal disclaimers regarding data usage and privacy, following local legal frameworks (there are similarities with Russian legislation, but make sure the app can adapt if local laws require changes).
+	•	Ideally, the application backend and data storage should be hosted within Abkhazia or in Russia, depending on data protection policies.
+
+⸻
+
+Let me know if you need any additional specifics! If you require help with legal references or local government contacts for accurate tax regulation data, I can provide general guidelines.

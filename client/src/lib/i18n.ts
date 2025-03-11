@@ -139,7 +139,7 @@ const enResources = {
 const ruResources = {
   translation: {
     // App general
-    appName: "Федеральная налоговая служба",
+    appName: "Налоговая служба Республики Абхазия",
     loading: "Загрузка...",
     error: "Произошла ошибка",
     submit: "Отправить",
@@ -249,6 +249,9 @@ const ruResources = {
     "taxCategory.other": "Другие налоги",
     "taxCategory.usn": "УСН",
     "taxCategory.vat": "НДС",
+    "taxCategory.patent": "Патентная система",
+    "taxCategory.land": "Земельный налог",
+    "taxCategory.rental": "Арендные сборы",
     
     // Document types
     documentTypes: {
@@ -257,11 +260,16 @@ const ruResources = {
       assessment: "Уведомление",
       statement: "Выписка",
       debt_notice: "Уведомление о задолженности",
-      ndfl_2: "Справка 2-НДФЛ"
+      ndfl_2: "Справка 2-НДФЛ",
+      patent: "Патент",
+      rent_payment: "Арендный сбор",
+      land_tax: "Земельный налог",
+      property_tax: "Налог на имущество",
+      payment_order: "Платежное поручение"
     },
     
     // Footer
-    footerCopyright: "Федеральная налоговая служба. Все права защищены.",
+    footerCopyright: "Налоговая служба Республики Абхазия. Все права защищены.",
     privacyPolicy: "Политика конфиденциальности",
     termsOfService: "Условия использования",
     accessibility: "Доступность",
@@ -273,16 +281,20 @@ const ruResources = {
     
     // Payment methods
     paymentMethods: {
-      sberbank: "Сбербанк Онлайн",
-      tinkoff: "Тинькофф",
-      yoomoney: "ЮKassa (YooMoney)",
-      qiwi: "QIWI"
+      sberbank: "Сбербанк",
+      vtb: "ВТБ",
+      psb: "Промсвязьбанк",
+      apra: "АПРА",
+      cash: "Наличный расчет"
     },
     instantPayment: "Мгновенный платеж",
     digitalWalletRu: "Электронный кошелек",
     electronicPayment: "Электронная оплата",
+    bankTransferRu: "Банковский перевод",
+    localPaymentSystem: "Местная платежная система",
+    offlinePayment: "Оплата наличными",
     securePayments: "Безопасные платежи",
-    securePaymentsDescription: "Все платежи защищены по стандартам ФСБ России и соответствуют требованиям ФЗ-152 о защите персональных данных.",
+    securePaymentsDescription: "Все платежи защищены в соответствии с нормами безопасности Республики Абхазия и российскими стандартами защиты персональных данных.",
     creditCard: "Банковская карта",
     bankTransfer: "Банковский перевод",
     digitalWallet: "Электронный кошелек",
