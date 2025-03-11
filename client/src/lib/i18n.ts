@@ -133,6 +133,151 @@ const enResources = {
   }
 };
 
+// Russian translations
+const ruResources = {
+  translation: {
+    // App general
+    appName: "Федеральная налоговая служба",
+    loading: "Загрузка...",
+    error: "Произошла ошибка",
+    submit: "Отправить",
+    cancel: "Отмена",
+    save: "Сохранить",
+    delete: "Удалить",
+    edit: "Редактировать",
+    view: "Просмотр",
+    download: "Скачать",
+    noData: "Данные отсутствуют",
+    
+    // Auth
+    login: "Вход",
+    register: "Регистрация",
+    logout: "Выйти",
+    username: "Имя пользователя",
+    password: "Пароль",
+    confirmPassword: "Подтверждение пароля",
+    email: "Электронная почта",
+    firstName: "Имя",
+    lastName: "Фамилия",
+    taxId: "ИНН",
+    phoneNumber: "Номер телефона",
+    address: "Адрес",
+    enterUsername: "Введите имя пользователя",
+    enterPassword: "Введите пароль",
+    chooseUsername: "Выберите имя пользователя",
+    choosePassword: "Выберите пароль",
+    confirmYourPassword: "Подтвердите пароль",
+    enterEmail: "Введите электронную почту",
+    enterFirstName: "Введите имя",
+    enterLastName: "Введите фамилию",
+    enterTaxId: "Введите ИНН",
+    enterPhoneNumber: "Введите номер телефона",
+    enterAddress: "Введите адрес",
+    loginSuccessful: "Вход выполнен успешно",
+    welcomeBack: "С возвращением, {{name}}!",
+    loginFailed: "Ошибка входа",
+    registrationSuccessful: "Регистрация завершена",
+    accountCreated: "Ваша учетная запись успешно создана",
+    registrationFailed: "Ошибка регистрации",
+    logoutSuccessful: "Выход выполнен успешно",
+    loggedOut: "Вы вышли из системы",
+    logoutFailed: "Ошибка выхода",
+    loginError: "Неверное имя пользователя или пароль",
+    registrationError: "Не удалось зарегистрировать учетную запись",
+    loggingIn: "Выполняется вход...",
+    registering: "Регистрация...",
+    loginWithGosuslugi: "Войти через Госуслуги",
+    loginWithINN: "Войти по ИНН и паспорту",
+
+    // Navigation
+    dashboard: "Главная",
+    taxDocuments: "Налоговые документы",
+    payments: "Платежи",
+    inquiries: "Запросы",
+    notifications: "Уведомления",
+    resources: "Ресурсы",
+    faqs: "Частые вопросы",
+    taxEducation: "Налоговое обучение",
+    support: "Поддержка",
+    settings: "Настройки",
+    profile: "Профиль",
+    
+    // Dashboard
+    welcome: "С возвращением, {{name}}",
+    taxOverview: "Ваш налоговый обзор и последние действия",
+    importantTaxDeadline: "Важный налоговый срок",
+    taxDeadlineMessage: "Ваша годовая налоговая декларация должна быть подана через",
+    fileNow: "Подать сейчас",
+    outstandingBalance: "Задолженность",
+    lastPayment: "Последний платеж",
+    yearToDateTaxesPaid: "Уплаченные налоги с начала года",
+    dueBy: "Срок до {{date}}",
+    processedOn: "Обработано {{date}}",
+    acrossTaxCategories: "По всем налоговым категориям",
+    payNow: "Оплатить сейчас",
+    viewReceipt: "Просмотр квитанции",
+    viewDetails: "Подробности",
+    dueSoon: "Скоро истекает",
+    processed: "Обработано",
+    taxOverviewTab: "Обзор налогов",
+    paymentHistoryTab: "История платежей",
+    documentsTab: "Документы",
+    taxBreakdownByCategory: "Распределение налогов по категориям",
+    recentActivities: "Последние действия",
+    viewAll: "Просмотреть все",
+    upcomingDeadlines: "Предстоящие сроки",
+    dueOn: "Срок",
+    daysLeft: "дней осталось",
+    viewAllDeadlines: "Просмотреть все сроки",
+    quickAccess: "Быстрый доступ",
+    needHelp: "Нужна помощь?",
+    contactTaxSupport: "Связаться с налоговой поддержкой",
+    days: "дней",
+    amount: "Сумма",
+    
+    // Tax Categories
+    "taxCategory.income": "НДФЛ",
+    "taxCategory.property": "Налог на имущество",
+    "taxCategory.vehicle": "Транспортный налог",
+    "taxCategory.other": "Другие налоги",
+    "taxCategory.usn": "УСН",
+    "taxCategory.vat": "НДС",
+    
+    // Document types
+    documentTypes: {
+      tax_return: "Налоговая декларация",
+      receipt: "Квитанция",
+      assessment: "Уведомление",
+      statement: "Выписка"
+    },
+    
+    // Footer
+    footerCopyright: "Федеральная налоговая служба. Все права защищены.",
+    privacyPolicy: "Политика конфиденциальности",
+    termsOfService: "Условия использования",
+    accessibility: "Доступность",
+    
+    // Page specific content
+    noTaxDataAvailable: "Налоговые данные отсутствуют",
+    noRecentActivities: "Нет недавних действий",
+    noUpcomingDeadlines: "Нет предстоящих сроков",
+    
+    // Payment methods
+    paymentMethods: {
+      sberbank: "Сбербанк Онлайн",
+      tinkoff: "Тинькофф",
+      yoomoney: "ЮKassa (YooMoney)",
+      qiwi: "QIWI"
+    },
+    
+    // Misc
+    uploadSupportingDocuments: "Загрузить подтверждающие документы",
+    maxFileSize: "Максимальный размер файла: 5MB",
+    allowedFileTypes: "Разрешенные типы файлов: PDF, DOC, DOCX, JPG, PNG",
+    rubleSymbol: "₽"
+  }
+};
+
 // Spanish translations
 const esResources = {
   translation: {
@@ -269,11 +414,12 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
+      ru: ruResources,
       en: enResources,
       es: esResources
     },
-    lng: "en", // Default language
-    fallbackLng: "en",
+    lng: "ru", // Default language is Russian
+    fallbackLng: "ru",
     interpolation: {
       escapeValue: false // React already protects from XSS
     }

@@ -1,0 +1,30 @@
+	•	View and download official tax documents, such as debt statements and payment receipts.
+	•	Receive notifications about tax deadlines and new assessments.
+	•	Make secure payments directly through the application in Russian Rubles (₽).
+
+	Localization and Adaptation Requirements:
+		1.	The entire application must be in Russian language by default, including all buttons, labels, error messages, and system notifications.
+	2.	The currency displayed should be Russian Rubles (₽), using Russian number formatting (e.g., 1 500,00 ₽ instead of 1,500.00 RUB).
+	3.	Dates must follow the DD.MM.YYYY format and support Moscow Standard Time (MSK).
+	4.	User authentication should include:
+	•	Integration with Gosuslugi (Госуслуги) for secure login.
+	•	Alternatively, users can log in using their ИНН (Individual Taxpayer Number) and passport details.
+	5.	The app must comply with Russian tax regulations, including handling НДФЛ, УСН, and other common taxation systems for individuals and businesses.
+	6.	Integrate Russian payment gateways (e.g., Sberbank Online, Tinkoff Pay, ЮKassa (YooMoney), QIWI) for secure and seamless payments in rubles.
+	7.	Provide SMS/email notifications in Russian about tax payment deadlines and account activity.
+	8.	Ensure compliance with Federal Law 152-ФЗ on personal data protection and host data on servers within Russia.
+	9.	UI/UX design should be intuitive for Russian citizens, simple and mobile-friendly, with options for downloading receipts in PDF format.
+
+	Technology stack suggestions (optional):
+		•	Frontend: React (with Russian localization)
+	•	Backend: Node.js with Express
+	•	Database: PostgreSQL
+	•	Authentication: JWT with Gosuslugi/SNILS/ИНН integration
+	•	Payment APIs: Sberbank, Tinkoff, YooMoney
+
+	Optional future features (if time allows):
+		•	Mobile app version for iOS and Android
+	•	Real-time chat with support agents in Russian
+	•	Data analytics dashboard for users to track their tax payments over time
+
+	The application must be secure, scalable, and ready for production use within the Russian jurisdiction.
