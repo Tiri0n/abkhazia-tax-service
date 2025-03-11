@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { useQuery } from "@tanstack/react-query";
 import { useAuth } from "@/hooks/use-auth";
 import { format, parseISO } from "date-fns";
+import { formatRussianDate, formatRubles } from "@/lib/utils";
 import { CreditCard, Loader2, Plus, FileText, AlertTriangle, Check, X } from "lucide-react";
 import {
   Table,

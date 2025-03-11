@@ -219,7 +219,7 @@ export default function DocumentsPage() {
                       </TableCell>
                       <TableCell>{t(`documentTypes.${doc.type.toLowerCase()}`)}</TableCell>
                       <TableCell>{doc.year}</TableCell>
-                      <TableCell>{format(new Date(doc.uploadDate), "PP")}</TableCell>
+                      <TableCell>{formatRussianDate(new Date(doc.uploadDate))}</TableCell>
                       <TableCell>
                         <Button variant="ghost" size="sm" asChild>
                           <a href={doc.fileUrl} target="_blank" rel="noopener noreferrer">
@@ -254,7 +254,7 @@ export default function DocumentsPage() {
                           <span className="ml-2">{doc.title}</span>
                         </TableCell>
                         <TableCell>{doc.year}</TableCell>
-                        <TableCell>{format(new Date(doc.uploadDate), "PP")}</TableCell>
+                        <TableCell>{formatRussianDate(new Date(doc.uploadDate))}</TableCell>
                         <TableCell>
                           <Button variant="ghost" size="sm" asChild>
                             <a href={doc.fileUrl} target="_blank" rel="noopener noreferrer">
