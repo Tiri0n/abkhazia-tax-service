@@ -1,78 +1,54 @@
-# Abkhazia Tax Service Portal
+# Abkhazia Tax Service Web Application
 
-A modern web application designed for the Tax Service of the Republic of Abkhazia, providing comprehensive digital tax management solutions for citizens and businesses.
+A modern tax service web application designed for Abkhazian citizens, providing comprehensive digital tax management solutions.
 
-## Features
+## Key Features
 
-- User authentication and account management
-- Tax obligations tracking and payment management
-- Document viewing and management
-- Notifications and support requests
-- Educational resources for tax filing
-- Mobile-responsive design
-- Russian language interface
+- Localized date and currency formatting (Russian format)
+- Payments and document management interface
+- Multi-language support
+- Responsive web design
+- Secure government portal integration
+- Support for Abkhazian payment methods
+- Dual currency support (Russian Ruble/Apsar)
 
-## Technology Stack
+## Tech Stack
 
-- **Frontend**: React.js, Tailwind CSS, Shadcn UI components
-- **Backend**: Node.js, Express
-- **Data Storage**: In-memory storage with PostgreSQL option
-- **Authentication**: Session-based authentication
-- **Internationalization**: i18next for translations
-- **Form Handling**: React Hook Form + Zod validation
+- Frontend: React.js with TypeScript
+- Backend: Node.js/Express
+- Database: PostgreSQL
+- State Management: TanStack Query
+- UI Components: shadcn/ui
+- Forms: React Hook Form
+- Validation: Zod
+- Styling: Tailwind CSS
+- Internationalization: i18next
+- Date Formatting: date-fns
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js (v16+)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
+1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/abkhazia-tax-service.git
+git clone https://github.com/Tiri0n/abkhazia-tax-service.git
 cd abkhazia-tax-service
 ```
 
-2. Install dependencies:
+2. Install dependencies
 ```bash
 npm install
-# or
-yarn install
 ```
 
-3. Start the development server:
+3. Start the development server
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5000`
+## Environment Variables
 
-## Project Structure
+The following environment variables are required:
 
-- `/client` - React frontend application
-  - `/src/components` - Reusable UI components
-  - `/src/hooks` - Custom React hooks
-  - `/src/lib` - Utility functions and configuration
-  - `/src/pages` - Application pages
-- `/server` - Express backend server
-  - `/routes.ts` - API routes
-  - `/storage.ts` - Data storage implementation
-  - `/auth.ts` - Authentication logic
-- `/shared` - Shared types and schemas
-  - `/schema.ts` - Database schema and type definitions
-
-## Abkhazia-Specific Customizations
-
-- Abkhazian tax categories and document types
-- Localized payment methods (Sberbank, VTB, PSB, APRA)
-- Cash payment options for rural areas
-- Local security standards compliance
-- Dual currency support (Russian Ruble/Apsar)
+- `DATABASE_URL`: PostgreSQL database connection string
+- `SESSION_SECRET`: Secret for session management
 
 ## License
 
