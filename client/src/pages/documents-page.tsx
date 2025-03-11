@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { useTranslation } from "react-i18next";
 import { useQuery } from "@tanstack/react-query";
 import { useAuth } from "@/hooks/use-auth";
-import { format } from "date-fns";
+import { formatRussianDate } from "@/lib/utils";
 import { Search, Download, FileText, File, FileSpreadsheet, FilePlus, Loader2 } from "lucide-react";
 import {
   Table,
@@ -31,6 +31,9 @@ const documentTypeIcons: { [key: string]: React.ReactNode } = {
   tax_return: <FileText className="h-5 w-5" />,
   receipt: <File className="h-5 w-5" />,
   assessment: <FileSpreadsheet className="h-5 w-5" />,
+  statement: <FileText className="h-5 w-5" />,
+  debt_notice: <FileText className="h-5 w-5 text-red-500" />,
+  ndfl_2: <FileText className="h-5 w-5 text-blue-500" />,
 };
 
 export default function DocumentsPage() {
@@ -137,6 +140,8 @@ export default function DocumentsPage() {
                 <SelectItem value="receipt">{t("documentTypes.receipt")}</SelectItem>
                 <SelectItem value="assessment">{t("documentTypes.assessment")}</SelectItem>
                 <SelectItem value="statement">{t("documentTypes.statement")}</SelectItem>
+                <SelectItem value="debt_notice">{t("documentTypes.debt_notice")}</SelectItem>
+                <SelectItem value="ndfl_2">{t("documentTypes.ndfl_2")}</SelectItem>
               </SelectContent>
             </Select>
           </div>

@@ -112,7 +112,9 @@ const enResources = {
       tax_return: "Tax Return",
       receipt: "Receipt",
       assessment: "Assessment",
-      statement: "Statement"
+      statement: "Statement",
+      debt_notice: "Debt Notice",
+      ndfl_2: "Form 2-NDFL"
     },
     
     // Footer
@@ -253,7 +255,9 @@ const ruResources = {
       tax_return: "Налоговая декларация",
       receipt: "Квитанция",
       assessment: "Уведомление",
-      statement: "Выписка"
+      statement: "Выписка",
+      debt_notice: "Уведомление о задолженности",
+      ndfl_2: "Справка 2-НДФЛ"
     },
     
     // Footer
@@ -405,7 +409,9 @@ const esResources = {
       tax_return: "Declaración de impuestos",
       receipt: "Recibo",
       assessment: "Evaluación",
-      statement: "Estado de cuenta"
+      statement: "Estado de cuenta",
+      debt_notice: "Aviso de deuda",
+      ndfl_2: "Formulario 2-NDFL"
     },
     
     // Footer
