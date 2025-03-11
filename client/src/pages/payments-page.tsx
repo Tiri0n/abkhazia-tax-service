@@ -143,8 +143,8 @@ export default function PaymentsPage() {
                   {payments.map((payment: any) => (
                     <TableRow key={payment.id}>
                       <TableCell className="font-medium">{payment.reference}</TableCell>
-                      <TableCell>{format(new Date(payment.date), "PPP")}</TableCell>
-                      <TableCell>{payment.amount}</TableCell>
+                      <TableCell>{formatRussianDate(new Date(payment.date))}</TableCell>
+                      <TableCell>{formatRubles(payment.amount)}</TableCell>
                       <TableCell className="capitalize">{payment.method.replace('_', ' ')}</TableCell>
                       <TableCell>{getStatusBadge(payment.status)}</TableCell>
                       <TableCell>
@@ -206,7 +206,7 @@ export default function PaymentsPage() {
                           {obligation.category.charAt(0).toUpperCase() + obligation.category.slice(1)} tax for {obligation.year || new Date().getFullYear()}
                         </p>
                         <div className="text-sm text-neutral-500">
-                          {t("dueOn")}: {format(dueDate, "PPP")}
+                          {t("dueOn")}: {formatRussianDate(dueDate)}
                           {!isOverdue && daysUntilDue <= 30 && (
                             <span className="ml-2 text-amber-600 font-medium">
                               ({daysUntilDue} {t("daysLeft")})
@@ -216,7 +216,7 @@ export default function PaymentsPage() {
                       </div>
                       <div className="mt-4 md:mt-0 flex flex-col md:items-end">
                         <div className="text-2xl font-bold text-neutral-800 mb-2">
-                          {obligation.amount}
+                          {formatRubles(obligation.amount)}
                         </div>
                         <Button className="bg-primary-500 hover:bg-primary-600">
                           {t("payNow")}
